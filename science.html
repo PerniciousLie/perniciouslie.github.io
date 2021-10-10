@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>An Unknown Alternative</title>
+    <meta charset="UTF-8">
+	<meta name="description" content="Describes the science behind Solar Updraft Towers including the chimney effect
+		and the storage of solar energy for use when the sun sets.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon"
+		type="image/gif"
+		href="images/icon.gif">
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+            //Event listener for clicking on sliding menu
+            document.getElementById('drawing').addEventListener('click', function () {
+                //Swap visible / hidden styles
+                document.getElementById('nav').className = document.getElementById('nav').className ===
+                    'hidden' ? 'visible' : 'hidden';
+            })
+
+            //Event listener for clicking anywhere on nav to slide it out
+            //of view after user makes a selection.
+            document.getElementById('nav').addEventListener('click', function () {
+                document.getElementById('nav').className = 'hidden';
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <header>
+        <img src="images/slidingdrawer.gif" id="drawing" alt="Image for sliding drawer navigation">
+		<h1>The Science Behind It</h1>
+		<link rel="stylesheet" href="SUTv2.css">
+    </header>
+    <nav id="nav" class="hidden">
+        <ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="science.html">The Science</a></li>
+		<li><a href="impact.html">The Impact</a></li>
+			<li>
+			<a>Media</a>
+			<div>
+				<ul>
+					<li><a href="existing.html">Existing Towers</a></li>
+					<li><a href="poc.html">Proof of Concept</a></li>
+				</ul>
+			</div>
+			</li>
+			<li>
+			<a href="about.html">About</a></li>
+		</ul>
+    </nav>
+    <article>
+		<div class="aligncenter"></div>
+		<div class="image">
+			<a href="images/Solar_updraft_tower_wbg.gif"><img class="articleimg" src="images/Solar_updraft_tower.gif" height="1215" 
+					width="1920" alt="Solar Updraft Tower diagram"><div class="mobile">Schematic presentation of a solar updraft tower</a></div></div>
+		<dl>
+			<dt>The Chimney Effect</dt>
+				<dd>Solar updraft towers use a phenomenon known as the chimney effect (stack effect). 
+					The chimney effect is the movement of air into and out of buildings, chimneys, or flue gas 
+					stacks and is driven by buoyancy. Buoyancy occurs due to a difference in indoor-to-outdoor 
+					air density resulting from temperature and moisture differences. The result is either a positive 
+					or negative buoyancy force. The greater the thermal difference and the height of the structure, 
+					the greater the buoyancy force.<br><br>
+					
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The hot air the greenhouse surrounding the tower collects travels towards 
+					it at increasing speed because of the slope of the polycarbonate panes. This airflow drives wind turbines, placed in 
+					the chimney or around the chimney base, to produce electricity.
+					<br><br>The image to the right shows the general concept of how a SUT works.
+					<div class="mobile"><a href="images/Solar_updraft_tower_wbg.gif">Click here</a> if on mobile device to see a diagram
+							showing the general concept of how a SUT works.</div><br></dd>
+			<dt>Storage of Solar Energy</dt>
+				<dd>Adding saltwater ponds and transpired collectors would increase the energy production of the tower to an efficiency
+					between 60 to 80%, which is about 2 to 3 times more effective than a traditional greenhouse. Transpired collectors use 
+					solar energy to preheat ventilation (outdoor) air as it is drawn into a building. The technology is ideally suited for
+					buildings with at least moderate ventilation requirements in sunny locations with long heating seasons. Since SUTs are 
+					always under sunlight, the heating of the air is only reliant on the hours of daylight provided by the sun.<br><br>
+					
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The average depth of the plenum between the transpired collector and the plant’s structural wall is 6 inches. The 
+					canopy at the top of the wall acts as both a manifold for the airflow and a solar heat collection device. The canopy face 
+					is made of perforated plate with 1% porosity. <a href="images/transpired-collector.gif">Click here</a> to see a diagram
+					of a transpired solar collector.<br><br>
+					
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The use of thermal retention ponds increases the time the plant can produce energy by reducing the diurnal variation 
+					(fancy term that means the variation between a high temperature and a low temperature that occurs during the same day) 
+					by using the heat stored in the ponds to continue to heat the air towards the turbines in the tower. The reason why water
+					is the best heat sink is because it has a much higher heat capacity than any other naturally occuring substance on earth.
+					Water has the highest specific heat capacity of any liquid. Specific heat is defined as the amount of heat one gram of a 
+					substance must absorb or lose to change its temperature by one degree Celsius. For water, this amount is one calorie, or 
+					4.184 Joules.<br><br></dd>
+		</dl>
+	</article>
+<footer class="image" onload='document.email.myEmail.focus()'>
+	<div id="footer">
+		<div><p><a href="index.html">Home  |</a><a href="science.html">The Science  |</a>
+			<a href="impact.html">The Impact</a><br><a href="existing.html">Existing Towers  |</a>
+			<a href="poc.html">Proof of Concept</a><br><a href="about.html">About</a></p></div>
+		<div><h3>Enter E-mail to join the mailing list:</h3><p>
+		<form method="post" action="#" name="email" onsubmit="return validateForm();">
+			<input type="email" name="myEmail" id="myEmail"
+				placeholder="you@yourdomain.com">
+			<input id="mySubmit" type="submit" value="Submit" onclick="ValidateEmail(document.email.myEmail)">
+		</form></p></div>
+		<script src="email-validation.js"></script>
+		<div><p>Developed for SDEV 153<br>
+		Contact the Developer: <a href="mailto:melonfarmersofamerica@gmail.com">melonfarmersofamerica@gmail.com</a>
+		Last Modified: 
+		<script>
+			document.write(document.lastModified)
+		</script>
+		</p></div>
+	</div>
+</footer>
+</body>
+
+</html>

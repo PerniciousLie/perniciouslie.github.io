@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>An Unknown Alternative</title>
+    <meta charset="UTF-8">
+	<meta name="description" content="Describes the impact of Solar Updraft Towers (SUTs) for initial cost, compares solar panels to SUTs, 
+		discusses the SUT's ability to store heat, and how it can be used to reduce pollution.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon"
+		type="image/gif"
+		href="images/icon.gif">
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+            //Event listener for clicking on sliding menu
+            document.getElementById('drawing').addEventListener('click', function () {
+                //Swap visible / hidden styles
+                document.getElementById('nav').className = document.getElementById('nav').className ===
+                    'hidden' ? 'visible' : 'hidden';
+            })
+
+            //Event listener for clicking anywhere on nav to slide it out
+            //of view after user makes a selection.
+            document.getElementById('nav').addEventListener('click', function () {
+                document.getElementById('nav').className = 'hidden';
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <header>
+        <img src="images/slidingdrawer.gif" id="drawing" alt="Image for sliding drawer navigation">
+		<h1>The Total Impact</h1>
+		<link rel="stylesheet" href="SUTv2.css">
+    </header>
+    <nav id="nav" class="hidden">
+        <ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="science.html">The Science</a></li>
+		<li><a href="impact.html">The Impact</a></li>
+			<li>
+			<a>Media</a>
+			<div>
+				<ul>
+					<li><a href="existing.html">Existing Towers</a></li>
+					<li><a href="poc.html">Proof of Concept</a></li>
+				</ul>
+			</div>
+			</li>
+			<li>
+			<a href="about.html">About</a></li>
+		</ul>
+    </nav>
+    <article>
+        <dl>
+			<dt>Intial Monetary Cost</dt>
+				<dd>Solar Updraft Towers (SUT) are incredibly expensive to build. A 1-kilometer (.62-mile) tall chimney 
+				made from cement and steel, and a collector 10 kilometers (6.2 miles) in diameter would cost $1.67 billion. 
+				That price tag is enough to put off potential investors for an industrial-sized plant based on technology 
+				that has not been tested that much. SUTs are much less efficient than photo-voltaic cells (PV) with 1-2% of 
+				the energy being converted into usable power, compared to PV's efficiency of 8-15%.
+					</dd>
+				<dd>The full cost of the tower is dependant on the location on which it will be built. Since it requires a 
+				vast amount of land, purchasing and clearing the land is about 25-33% of the incurred cost of the project. 
+				Apollo Development hopes to build 3 towers in West Texas with 2,400-foot towers, each costing between $700 
+				million to $800 million.
+					</dd>
+			<dt>Economical Impact</dt>
+				<dd>The initial cost is much more than a regular solar array tower, but the efficiency is not affected by 
+				dust and debris like solar panels are. The power production can last 24 hours if the thermal sinks can store 
+				enough heat during the day (which will be no problem if the SUT is built in a desert). Building the tower is 
+				no small feat, because of the amount of funding required, but the canopy can be used as a greenhouse to provide 
+				food to the surrounding region.
+				
+					</dd>
+				<table border="1">
+				<caption>SUT vs PV</caption>
+					<tr>
+						<th>SUT</th>
+						<th>PV</th>
+					</tr>
+					<tr>
+						<td>1-2% eff.</td>
+						<td>8-15% eff.</td>
+					</tr>
+					<tr>
+						<td>Costs $700m-$2b per tower</td>
+						<td>Costs $5000-$17k per cell</td>
+					<tr>
+						<td>Low maintenance cost</td>
+						<td>High maintenance cost</td>
+					</tr>
+					<tr>
+						<td>Pays for itself in 2-4 years</td>
+						<td>Pays for itself in 7-20 years</td>
+					</tr>
+				</table>
+			<dt>Environmental Impact</dt>
+				<dd>There are many other applications for the Solar Updraft Tower:
+					<ul>
+						<li>Release of humid ground-level air from an atmospheric vortex or solar chimney at altitude could 
+						form clouds or precipitation, potentially altering local hydrology. Local de-desertification, or 
+						afforestation could be achieved if a regional water cycle were established and sustained in an otherwise 
+						arid area.</li>
+						<li>The solar cyclone distiller could extract atmospheric water by condensation in the updraft of the 
+						chimney. This solar cyclonic water distiller with a solar collector pond could adapt the solar 
+						collector-chimney system for large-scale desalination of collected brine, brackish- or waste-water pooled 
+						in the collector base.</li>
+						<li>Fitted with a vortex chimney scrubber, the updraft could be cleaned of particulate air pollution. An 
+						experimental tower is cleaning the air in China with little external energy input. Alternately, particulate 
+						air pollution caught in the updraft could serve as a nucleation stimulus for precipitation either in the 
+						chimney, or at release altitude as cloud seeds.</li>
+					</ul>
+				</dd>
+		</dl>
+    </article>
+<footer class="image" onload='document.email.myEmail.focus()'>
+	<div id="footer">
+		<div><p><a href="index.html">Home  |</a><a href="science.html">The Science  |</a>
+			<a href="impact.html">The Impact</a><br><a href="existing.html">Existing Towers  |</a>
+			<a href="poc.html">Proof of Concept</a><br><a href="about.html">About</a></p></div>
+		<div><h3>Enter E-mail to join the mailing list:</h3><p>
+		<form method="post" action="#" name="email" onsubmit="return validateForm();">
+			<input type="email" name="myEmail" id="myEmail"
+				placeholder="you@yourdomain.com">
+			<input id="mySubmit" type="submit" value="Submit" onclick="ValidateEmail(document.email.myEmail)">
+		</form></p></div>
+		<script src="email-validation.js"></script>
+		<div><p>Developed for SDEV 153<br>
+		Contact the Developer: <a href="mailto:melonfarmersofamerica@gmail.com">melonfarmersofamerica@gmail.com</a>
+		Last Modified: 
+		<script>
+			document.write(document.lastModified)
+		</script>
+		</p></div>
+	</div>
+</footer>
+</body>
+
+</html>

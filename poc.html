@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>An Unknown Alternative</title>
+    <meta charset="UTF-8">
+	<meta name="description" content="A video showing a proof of concept (albeit small) tower demonstrating the 
+		chimney effect.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon"
+		type="image/gif"
+		href="images/icon.gif">
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+            //Event listener for clicking on sliding menu
+            document.getElementById('drawing').addEventListener('click', function () {
+                //Swap visible / hidden styles
+                document.getElementById('nav').className = document.getElementById('nav').className ===
+                    'hidden' ? 'visible' : 'hidden';
+            })
+
+            //Event listener for clicking anywhere on nav to slide it out
+            //of view after user makes a selection.
+            document.getElementById('nav').addEventListener('click', function () {
+                document.getElementById('nav').className = 'hidden';
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <header>
+        <img src="images/slidingdrawer.gif" id="drawing" alt="Image for sliding drawer navigation">
+		<h1>Proof of Concept</h1>
+		<link rel="stylesheet" href="SUTv2.css">
+    </header>
+    <nav id="nav" class="hidden">
+        <ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="science.html">The Science</a></li>
+		<li><a href="impact.html">The Impact</a></li>
+			<li>
+			<a>Media</a>
+			<div>
+				<ul>
+					<li><a href="existing.html">Existing Towers</a></li>
+					<li><a href="poc.html">Proof of Concept</a></li>
+				</ul>
+			</div>
+			</li>
+			<li>
+			<a href="about.html">About</a></li>
+		</ul>
+    </nav>
+    <article id="page">
+		<h1>Building a Mini SUT (Video)</h1>
+        <iframe id="video" width="1120" height="730" src="https://www.youtube.com/embed/Rlveb92MSVM" 
+		frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+		allowfullscreen></iframe>
+    </article>
+<footer class="image" onload='document.email.myEmail.focus()'>
+	<div id="footer">
+		<div><p><a href="index.html">Home  |</a><a href="science.html">The Science  |</a>
+			<a href="impact.html">The Impact</a><br><a href="existing.html">Existing Towers  |</a>
+			<a href="poc.html">Proof of Concept</a><br><a href="about.html">About</a></p></div>
+		<div><h3>Enter E-mail to join the mailing list:</h3><p>
+		<form method="post" action="#" name="email" onsubmit="return validateForm();">
+			<input type="email" name="myEmail" id="myEmail"
+				placeholder="you@yourdomain.com">
+			<input id="mySubmit" type="submit" value="Submit" onclick="ValidateEmail(document.email.myEmail)">
+		</form></p></div>
+		<script src="email-validation.js"></script>
+		<div><p>Developed for SDEV 153<br>
+		Contact the Developer: <a href="mailto:melonfarmersofamerica@gmail.com">melonfarmersofamerica@gmail.com</a>
+		Last Modified: 
+		<script>
+			document.write(document.lastModified)
+		</script>
+		</p></div>
+	</div>
+</footer>
+</body>
+
+</html>

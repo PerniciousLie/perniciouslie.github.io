@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>An Unknown Alternative</title>
+    <meta charset="UTF-8">
+	<meta name="description" content="An informative website that compares the differences between solar
+		panels and solar updraft towers (SUTs) to prove that SUTs are superior.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon"
+		type="image/gif"
+		href="images/icon.gif">
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+            //Event listener for clicking on sliding menu
+            document.getElementById('drawing').addEventListener('click', function () {
+                //Swap visible / hidden styles
+                document.getElementById('nav').className = document.getElementById('nav').className ===
+                    'hidden' ? 'visible' : 'hidden';
+            })
+
+            //Event listener for clicking anywhere on nav to slide it out
+            //of view after user makes a selection.
+            document.getElementById('nav').addEventListener('click', function () {
+                document.getElementById('nav').className = 'hidden';
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <header>
+        <img src="images/slidingdrawer.gif" id="drawing" alt="Image for sliding drawer navigation">
+		<h1>Solar Updraft Towers</h1>
+		<link rel="stylesheet" href="SUTv2.css">
+    </header>
+    <nav id="nav" class="hidden">
+        <ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="science.html">The Science</a></li>
+		<li><a href="impact.html">The Impact</a></li>
+			<li>
+			<a>Media</a>
+			<div>
+				<ul>
+					<li><a href="existing.html">Existing Towers</a></li>
+					<li><a href="poc.html">Proof of Concept</a></li>
+				</ul>
+			</div>
+			</li>
+			<li>
+			<a href="about.html">About</a></li>
+		</ul>
+    </nav>
+    <main>
+		<div class="aligncenter">
+			<img src="images/homeimg.gif" height="1200" 
+				width="1200" alt="Solar Updraft Tower Logo" align="middle">
+			<div class="image">
+			<p>Solar updraft towers are an unknown alternative of green energy.<br><br>
+				The solar updraft tower (SUT) is a design concept for a renewable-energy 
+				power plant for generating electricity from low temperature solar heat. 
+				Sunlight heats the air beneath a very wide greenhouse-roofed 
+				structure surrounding the central base of a very tall chimney tower.<br>
+			<a href="science.html">See The Science Behind It</a></p></div>
+			<div class="mobile"><p><a href="science.html">See The Science Behind Solar Updraft Towers</a></p></div>
+		</div>
+	</main>
+</body>
+
+</html>

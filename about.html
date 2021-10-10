@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>An Unknown Alternative</title>
+    <meta charset="UTF-8">
+	<meta name="description" content="Meet the developer behind the website and learn more by visiting the reference pages provided 
+		by the links. Don't forget to join the mailing list to see how you can get involved in helping spread the word about An Unknown 
+		Alternative.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon"
+		type="image/gif"
+		href="images/icon.gif">
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+            //Event listener for clicking on sliding menu
+            document.getElementById('drawing').addEventListener('click', function () {
+                //Swap visible / hidden styles
+                document.getElementById('nav').className = document.getElementById('nav').className ===
+                    'hidden' ? 'visible' : 'hidden';
+            })
+
+            //Event listener for clicking anywhere on nav to slide it out
+            //of view after user makes a selection.
+            document.getElementById('nav').addEventListener('click', function () {
+                document.getElementById('nav').className = 'hidden';
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <header>
+        <img src="images/slidingdrawer.gif" id="drawing" alt="Image for sliding drawer navigation">
+		<h1>About This Website</h1>
+		<link rel="stylesheet" href="SUTv2.css">
+    </header>
+    <nav id="nav" class="hidden">
+        <ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="science.html">The Science</a></li>
+		<li><a href="impact.html">The Impact</a></li>
+			<li>
+			<a>Media</a>
+			<div>
+				<ul>
+					<li><a href="existing.html">Existing Towers</a></li>
+					<li><a href="poc.html">Proof of Concept</a></li>
+				</ul>
+			</div>
+			</li>
+			<li>
+			<a href="about.html">About</a></li>
+		</ul>
+    </nav>
+    <article>
+		<h1>Meet the Developer</h1>
+		<p>
+			<div class="articleimg768">
+			<img class="imgborder" src="images/plthumb.gif" height="240" width="240" alt="A picture of PerniciousLie, the web developer">
+			</div><a href="https://github.com/perniciouslie>
+				&nbsp; &nbsp; PerniciousLie</a> was going to College for an Associates in Software Development.
+				Their interest in Solar Updraft Towers began in high school (12 years ago) and they are suprised the green energy lobbyists
+				haven't tried pitching this technology to congress. The issue surrounding the implementation of SUTs in arid regions 
+				for terraforming purposes is the cost of building such a large structure, but the towers will pay off the incurred 
+				cost of construction in 3-4 years (which is better than solar panels which take 10 or more years to pay for themselves and 
+				require constant maintenence).
+		</p>
+		<h3>References</h3>
+			<dl>
+				<dt>Solar Chimneys Can Convert Hot Air to Energy, But Is Funding a Mirage?</dt>
+					<dd><a href="https://www.nationalgeographic.com/news/energy/2014/04/140416-solar-updraft-towers-convert-hot-air-to-energy/">
+							Link to National Geographic Article</a></dd>
+				<dt>Solar updraft tower</dt>
+					<dd><a href="https://en.wikipedia.org/w/index.php?title=Solar_updraft_tower&gettingStartedReturn=true">
+							Link to Wikipedia Article</a></dd>
+				<dt>Transpired Collectors (Solar Preheaters for Outdoor Ventilation Air)</dt>
+					<dd><a href="https://www.energy.gov/sites/prod/files/2013/10/f3/FTA_trans_coll.pdf">Link to PDF</a></dd>
+			</dl>
+    </article>
+<footer class="image" onload='document.email.myEmail.focus()'>
+	<div id="footer">
+		<div><p><a href="index.html">Home  |</a><a href="science.html">The Science  |</a>
+			<a href="impact.html">The Impact</a><br><a href="existing.html">Existing Towers  |</a>
+			<a href="poc.html">Proof of Concept</a><br><a href="about.html">About</a></p></div>
+		<div><h3>Enter E-mail to join the mailing list:</h3><p>
+		<form method="post" action="#" name="email" onsubmit="return validateForm();">
+			<input type="email" name="myEmail" id="myEmail"
+				placeholder="you@yourdomain.com">
+			<input id="mySubmit" type="submit" value="Submit" onclick="ValidateEmail(document.email.myEmail)">
+		</form></p></div>
+		<script src="email-validation.js"></script>
+		<div><p>Developed for SDEV 153<br>
+		Contact the Developer: <a href="mailto:melonfarmersofamerica@gmail.com">melonfarmersofamerica@gmail.com</a>
+		Last Modified: 
+		<script>
+			document.write(document.lastModified)
+		</script>
+		</p></div>
+	</div>
+</footer>
+</body>
+
+</html>

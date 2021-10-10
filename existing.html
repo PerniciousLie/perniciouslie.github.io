@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>An Unknown Alternative</title>
+    <meta charset="UTF-8">
+	<meta name="description" content="Image page showing the prototype tower built in Manzanares, Spain.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon"
+		type="image/gif"
+		href="images/icon.gif">
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+            //Event listener for clicking on sliding menu
+            document.getElementById('drawing').addEventListener('click', function () {
+                //Swap visible / hidden styles
+                document.getElementById('nav').className = document.getElementById('nav').className ===
+                    'hidden' ? 'visible' : 'hidden';
+            })
+
+            //Event listener for clicking anywhere on nav to slide it out
+            //of view after user makes a selection.
+            document.getElementById('nav').addEventListener('click', function () {
+                document.getElementById('nav').className = 'hidden';
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <header>
+        <img src="images/slidingdrawer.gif" id="drawing" alt="Image for sliding drawer navigation">
+		<h1>Existing Solar Updraft Towers</h1>
+		<link rel="stylesheet" href="SUTv2.css">
+    </header>
+    <nav id="nav" class="hidden">
+        <ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="science.html">The Science</a></li>
+		<li><a href="impact.html">The Impact</a></li>
+			<li>
+			<a>Media</a>
+			<div>
+				<ul>
+					<li><a href="existing.html">Existing Towers</a></li>
+					<li><a href="poc.html">Proof of Concept</a></li>
+				</ul>
+			</div>
+			</li>
+			<li>
+			<a href="about.html">About</a></li>
+		</ul>
+    </nav>
+    <article id="imageGallery">
+        <h1>Image Gallery</h1>
+        <ul id="gallery">
+			<li><a class="alignleft" href="tower/AWK_von_La_Solana_aus.gif"><img src="tower/AWK_thumb.gif" width="20%"
+				height="auto" alt="SUT as seen from La Solana"><div class="mobile">SUT as seen from La Solana</div>
+				<span class="image"><img class="scaleDisplay" src="tower/AWK_von_La_Solana_aus.gif" width="60%" height="auto"
+					alt="SUT as seen from La Solana"><br>SUT as seen from La Solana</span></a>
+			</li>
+			<li><a class="alignleft" href="tower/Manzanares_view_from_8km_south_direction.gif"><img src="tower/Manzanares_viewthumb.gif"
+				width="20%" height="auto" alt="SUT powerplant prototype in Manzanares, Spain"><div class="mobile">SUT powerplant prototype in Manzanares, 
+				Spain<br>Seen from a point 8 km to the South</div>
+				<span class="image"><img class="scaleDisplay" src="tower/Manzanares_view_from_8km_south_direction.gif" width="60%" height="auto"
+					alt="SUT powerplant prototype in Manzanares, Spain"><br>SUT powerplant prototype in Manzanares, Spain<br>Seen from a point 
+					8 km to the South</span></a>
+			</li>
+			<li><a class="alignleft" href="tower/Manzanares-view_glass_roof.gif"><img src="tower/Manzanares-view_glassthumb.gif" width="20%"
+				height="auto" alt="View of the tower through the collector 	glass roof"><div class="mobile">Manzanares Solar Chimney<br>View of the 
+				tower through the collector glass roof</div>
+				<span class="image"><img src="tower/Manzanares-view_glass_roof.gif" width="60%" height="auto"
+					alt="View of the tower through the collector glass roof"><br>Manzanares Solar Chimney<br>View of the tower through the collector 
+					glass roof</span></a>
+			</li>
+			<li><a class="alignleft" href="tower/Sicht_vom_Turm_auf_das_Vordach_mit_geschwärztem_Boden.gif"><img src="tower/Sichtthumb.gif" 
+				width="20%"	height="auto" alt="View from the tower on the roof with blackened ground below the collector"><div class="mobile">
+				View from the tower on the roof with blackened ground below the collector.<br></div>
+				<span class="image"><img class="scaleDisplay" src="tower/Sicht_vom_Turm_auf_das_Vordach_mit_geschwärztem_Boden.gif" width="60%" height="auto"
+					alt="View from the tower on the roof with blackened ground below the collector"><br>View from the tower on the roof with blackened 
+					ground below the collector.</span></a>
+			</li>
+		</ul>
+    </article>
+<footer class="image" onload='document.email.myEmail.focus()'>
+	<div id="footer">
+		<div><p><a href="index.html">Home  |</a><a href="science.html">The Science  |</a>
+			<a href="impact.html">The Impact</a><br><a href="existing.html">Existing Towers  |</a>
+			<a href="poc.html">Proof of Concept</a><br><a href="about.html">About</a></p></div>
+		<div><h3>Enter E-mail to join the mailing list:</h3><p>
+		<form method="post" action="#" name="email" onsubmit="return validateForm();">
+			<input type="email" name="myEmail" id="myEmail"
+				placeholder="you@yourdomain.com">
+			<input id="mySubmit" type="submit" value="Submit" onclick="ValidateEmail(document.email.myEmail)">
+		</form></p></div>
+		<script src="email-validation.js"></script>
+		<div><p>Developed for SDEV 153<br>
+		Contact the Developer: <a href="mailto:melonfarmersofamerica@gmail.com">melonfarmersofamerica@gmail.com</a>
+		Last Modified: 
+		<script>
+			document.write(document.lastModified)
+		</script>
+		</p></div>
+	</div>
+</footer>
+</body>
+
+</html>
